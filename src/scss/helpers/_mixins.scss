@@ -1,0 +1,3 @@
+@mixin transition-visibility-opacity ($v-duration, $v-delay, $o-duration, $o-delay) {
+	transition: visibility $v-duration linear $v-delay, opacity $o-duration linear $o-delay;
+}

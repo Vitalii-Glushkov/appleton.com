@@ -1,0 +1,135 @@
+.header__page-heading {
+	position: relative;
+	top: -181px;
+	left: 224px;
+
+	width: 576px;
+	max-height: 148px;
+	border-bottom: 5px solid $c-bb-header__page-heading;
+
+	font-size: $fs-header__page-heading;
+	color: $c-header__page-heading;
+
+	background-color: $c-bc-header__page-heading;
+}
+
+@media (max-width: 320px) {
+	.header__page-heading { 
+		position: initial;
+
+		width: 100%;
+		height: auto;
+		max-height: none;
+		margin: 0;
+		border-bottom: none;
+		
+		line-height: 75px;
+		text-align: center;
+	}
+}
+
+.header__h1-heading-wrapper {
+	padding-left: 10px;
+	vertical-align: bottom;
+
+	font-style: $fst-header__h1-heading-wrapper;
+	line-height: $lh-header__h1-heading-wrapper;
+	letter-spacing: $ls-header__h1-heading-wrapper;
+}
+
+@media (max-width: 320px) {
+	.header__h1-heading-wrapper {
+		padding-left: 0;
+		vertical-align: middle;
+		line-height: $lh-header__h1-heading-wrapper-320;
+	}
+}
+
+.header__logo-animation {
+	width: 225px;
+	height: 163px;
+	margin: 0;
+	padding: 0;
+
+	background-color: $c-bc-header__logo-animation;
+}
+
+@media (max-width: 320px) {
+	.header__logo-animation { display: none; }
+}
+
+#logo-2 { margin-left: -5px; }
+
+#logo-3 {
+	margin-top: -3px;
+	border-bottom: 3px solid $c-bb-logo;
+}
+
+#logo-4 {
+	@extend #logo-2;
+	@extend #logo-3;
+}
+
+@keyframes logo_1_animate {
+	0% {}
+	25% { transform: rotateY(180deg); }
+	50% { transform: rotateY(180deg); }
+	100% {}
+}
+
+#logo-1 {
+	animation-name: logo_1_animate;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+@keyframes logo_2_animate {
+	0% {}
+	25% { transform: rotateY(180deg); }
+	50% { transform: rotateY(180deg); }
+	100% {}
+}
+
+#logo-2 {
+	animation-name: logo_2_animate;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 15s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+@keyframes logo_3_animate {
+	0% {}
+	25% { transform: rotateY(180deg); }
+	50% { transform: rotateY(180deg); }
+	100% {}
+}
+
+#logo-3 {
+	animation-name: logo_3_animate;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 20s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+@keyframes logo_4_animate {
+	0% {}
+	25% { transform: rotateY(180deg); }
+	50% { transform: rotateY(180deg); }
+	100% {}
+}
+
+#logo-4 {
+	animation-name: logo_4_animate;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 25s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}

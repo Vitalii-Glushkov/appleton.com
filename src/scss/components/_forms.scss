@@ -1,0 +1,66 @@
+/** Contacts */
+.contacts__form {
+	width: 600px;
+	margin-top: 60px;
+	margin-left: 100px;
+	padding: 10px;
+	border: 1px solid $c-b-contacts__form;
+	
+	border-radius: 5px;
+}
+
+@media (max-width: 320px) {
+	.contacts__form {
+		width: 95%;
+		margin-left: 0;
+		padding: 5px;
+	}
+}
+
+.contacts__fieldset {
+	height: 275px;
+}
+
+@media (max-width: 320px) {
+	.contacts__fieldset {
+		height: auto;
+	}
+}
+
+.contacts__legend {
+	font-style: $fst-contacts__legend;
+	font-weight: $fw-contacts__legend;
+}
+.contacts__input-label {
+	display: block;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+.contacts__input-type-text, .contacts__textarea {
+	border-radius: 5px;
+	
+	background-color: $c-bc-contacts__input-type-text-AND-textarea;
+}
+.contacts__input-type-text {
+	width: 200px;
+	margin-left: 25px;
+}
+.contacts__textarea-section {
+	position: relative;
+	top: -171px;
+	left: 275px;
+}
+
+@media (max-width: 320px) {
+	.contacts__textarea-section {
+		position: static;
+	}
+}
+
+.contacts__textarea {
+	width: 277px;
+	height: 129px;
+}
+
+/** Modals */
+.pop-up-age__form, .pop-up-error__form { text-align: $ta-op-up-age-AND-error__form; }

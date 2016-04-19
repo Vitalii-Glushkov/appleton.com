@@ -1,0 +1,112 @@
+.content {
+	width: 100%;
+	margin-top: 0;
+	padding-bottom: 90px;
+
+	font-family: $ff-content;
+	
+	background-color: $c-bc-content;
+}
+
+.slogan { height: 100px; }
+
+@media (max-width: 320px) {
+	.slogan { height: 58px; }
+}
+
+.slogan__heading {
+	float: left;
+	
+	padding-left: 25px;
+	padding-right: 25px;
+	
+	font-size: $fs-slogan__heading;
+	font-weight: $fw-slogan__heading;
+	letter-spacing: $ls-slogan__heading;
+	line-height: $lh-slogan__heading;
+}
+
+@media (max-width: 320px) {
+	.slogan__heading {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 14px 0 15px 0;
+		line-height: 30px;
+	}
+}
+
+.slogan__decor-elem {
+	display: inline-block;
+	width: 270px;
+	height: 18px;
+	
+	background-color: $c-bc-slogan__decor-elem;
+}
+
+@media (max-width: 320px) {
+	.slogan__decor-elem {
+		width: 63px;
+		height: 18px;
+	}
+}
+
+%slogan__decor-elem--ph {
+	float: left;
+	
+	margin-top: 60px;
+	margin-left: 30px;
+	
+	background: $c-b-slogan__decor-elem; /* For browsers that do not support gradients */
+}
+
+.slogan__decor-elem--first {
+	@extend %slogan__decor-elem--ph;
+	background: linear-gradient(to right, $c-b-slogan__decor-elem-grad-before, $c-b-slogan__decor-elem-grad-after); /* Standard synt*/
+}
+
+@media (max-width: 320px) {
+	.slogan__decor-elem--first { margin: 20px 0 20px 20px; }
+}
+
+.slogan__decor-elem--last {
+	@extend %slogan__decor-elem--ph;
+	background: linear-gradient(to left, $c-b-slogan__decor-elem-grad-before, $c-b-slogan__decor-elem-grad-after); /* Standard synt */
+}
+
+@media (max-width: 320px) {
+	.slogan__decor-elem--last { margin: 20px 20px 20px 0; }
+}
+
+.article {
+	width: 100%;
+} 
+
+.article__img { box-shadow: 0 0 10px $c-bs-article__img; }
+
+.article__img-320 { display: none; }
+
+@media (max-width: 320px) {
+	.article__img-320 { 
+		display: inline-block;
+	}
+	.article__img { display: none; }
+}
+
+.article__text {
+	width: 95%;
+	margin-top: 60px;
+	padding-right: 2.5%;
+	padding-left: 2.5%;
+	
+	font-size: $fs-article__text;
+	letter-spacing: $ls-article__text;
+	line-height: $lh-article__text;
+	text-align: $ta-article__text;
+	text-indent: $ti-article__text;
+}
+
+@media (max-width: 320px) {
+	.article__text {
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,112 @@
+.products__content {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 50px;
+}
+
+@media (max-width: 320px) {
+	.products__content {
+		padding: 20px 0 100px 0;
+	}
+}
+
+.products-item {
+	display: inline-block;
+}
+
+.products-item__content {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 350px;
+	height: 400px;
+	margin-bottom: 50px;
+	border-top-width: 0;
+	border: 1px solid $c-b-products-item__content;
+	
+	overflow: $o-products-item__content;
+	text-decoration: $td-products-item__content;
+	&:hover {
+		height: auto;
+		border: 2px outset $c-b-products-item__content--hover;
+	
+		overflow: $o-products-item__content--hover;
+	}
+}
+
+@media (max-width: 320px) {
+	.products-item__content {
+		width: 100%;
+		height: auto;
+		
+		overflow: $o-products-item__content-320;
+		&:hover {
+			border: 1px solid $c-b-products-item__content--hover;
+		
+			overflow: visible;
+	}
+	}
+}
+
+.products-item__title { margin-left: 10px; }
+
+@media (max-width: 320px) {
+	.products-item__title {
+		margin-left: 0;
+		text-align: $products-item__title-320;
+	}
+}
+
+.products-item__price {
+	display: inline-block;
+	height: 25px;
+	margin-top: -10px;
+	margin-left: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 1px solid $c-b-products-item__price;
+	
+	color: $c-products-item__price;
+	line-height: $lh-products-item__price;
+	vertical-align: middle;
+	
+	background-color: $c-br-products-item__price;
+	border-radius: 10px;
+}
+
+@media (max-width: 320px) {
+	.products-item__price {
+		display: block;
+		width: 110px;
+		margin: 0 auto;
+		text-align: $products-item__price-320;
+	}
+}
+
+.products-item__img {
+	margin-left: 42px;
+	
+	box-shadow: 0 0 10px $c-bs-products-item__img;
+	&:hover {
+		transform: scale(2, 2);
+		transition: transform 1s;
+	}
+}
+
+@media (max-width: 320px) {
+	.products-item__img {
+			display: block;
+			width: 236px;
+			margin: 20px auto;
+			&:hover {
+				transform: none;
+	}
+	}
+}
+
+.products-item__text {
+	text-indent: $ti-products-item__text;
+	text-align: $ta-products-item__text;
+	margin-right: 10px;
+	margin-left: 10px;
+}

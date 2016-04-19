@@ -1,0 +1,27 @@
+.contacts__content { padding-bottom: 100px; }
+
+@media (max-width: 320px) {
+	.contacts__content {
+		width: 100%;
+	}
+}
+
+.contacts__heading {
+	font-size: $fs-contacts__heading;
+	font-weight: $fw-contacts__heading;
+	letter-spacing: $ls-contacts__heading;
+	text-align: $ta-contacts__heading;
+}
+
+.contacts__text {
+	margin-left: 25px;
+	margin-right: 25px;
+	
+	text-indent: $ti-contacts__text;
+	text-align: $ta-contacts__text;
+}
+
+.contacts__address {
+	margin-left: 25px;
+	margin-top: 25px;
+}

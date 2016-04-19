@@ -1,0 +1,41 @@
+html, body { height: 100%; }
+
+body {
+	width: 100%;	
+	margin: 0px auto;
+	
+	font-family: $ff-body;
+	font-size: $fs-body;
+	
+	background-image: url("../img/width_1920/16.jpg");
+	background-repeat: repeat;
+	background-position: right top;
+	background-attachment: fixed;
+}
+
+@media (max-width: 320px) {
+	body {
+		background-image: initial;
+	}
+}
+
+.main, .products, .goods, .prices, .statistics, .contacts, .about {
+	position: relative;
+	
+	width: 800px;
+	margin: 50px auto;
+	padding: 0 0;
+	min-height: 100%;
+	
+	background-color: $c-bc-blocks-wrappers;
+	box-shadow: 0 0 3px 3px $c-bs-blocks-wrappers;
+}
+
+@media (max-width: 320px) {
+	.main, .products, .goods, .prices, .statistics, .contacts, .about {
+		width: 320px;
+		margin: 0 auto;
+
+		box-shadow: none;
+	}
+}

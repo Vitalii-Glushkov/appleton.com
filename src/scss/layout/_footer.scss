@@ -1,0 +1,17 @@
+.footer {
+	position: absolute;
+	bottom: 0;
+	
+	width: 100%;
+	height: auto;
+	padding-bottom: 7px;
+	border-top: 3px solid $c-bt-footer;
+	
+	font-size: $fs-footer;
+	color: $c-footer;
+	text-align: $ta-footer;
+	
+	background-color: $c-bc-footer;
+}
+
+.footer__copyright { margin-bottom: 5px; }

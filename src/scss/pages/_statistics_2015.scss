@@ -1,0 +1,24 @@
+.statistics__content { padding-bottom: 100px; }
+
+.statistics-2015__heading {
+	text-align: $ta-statistics-2015__heading;
+	font-style: $fst-statistics-2015__heading;
+	letter-spacing: $ls-statistics-2015__heading;
+}
+
+.statistics-2015__tables {
+	width: 100%;
+	border: 1px solid black;
+	
+	font-size: $fs-statistics-2015__tables;
+	text-align: $ta-statistics-2015__tables;
+	vertical-align: middle;
+	
+	border-collapse: collapse;
+}
+
+@media (max-width: 320px) {
+	.statistics__content {
+		overflow-x: auto;
+	}
+}

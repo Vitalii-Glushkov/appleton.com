@@ -1,0 +1,26 @@
+.cart {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	right: 0;
+
+	width: 100px;
+	height:25px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border: 1px solid $c-b-products-item__price;
+	
+	color: $c-products-item__price;
+	line-height: $lh-products-item__price;
+	vertical-align: middle;
+	text-align: center;
+	
+	background-color: $c-br-products-item__price;
+	border-bottom-left-radius: 10px;
+}
+
+.cart__link {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none; 
+}

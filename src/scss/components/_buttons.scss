@@ -1,0 +1,49 @@
+/** Contacts */
+.contacts__input-type-submit {
+	position: relative;
+	top: -135px;
+	left: 413px;
+
+	width: 120px;
+	height: 28px;
+	border: 2px solid $c-b-contacts__input-type-submit;
+	
+	color: $c-contacts__input-type-submit;
+	
+	background-color: $c-bc-contacts__input-type-submit;
+}
+
+@media (max-width: 320px) {
+	.contacts__input-type-submit {
+		position: static;
+		margin-top: 10px;
+	}
+}
+
+/** Modals */
+.pop-up-age__close-mark-link, .pop-up-error__close-mark-link {
+	position: absolute;
+	left: 307px;
+	top: -17px;
+	
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid $c-b-pop-up-age-AND-error___close-mark-link;
+	border-radius: 50%;
+}
+
+.pop-up-age__input-type-button, .pop-up-error__input-type-button {
+	width: 75px;
+	height: 30px;
+	border-radius: 15px;
+	border: 2px solid $c-b-pop-up-age-AND-error__input-type-button;
+	
+	color: $c-pop-up-age-AND-error__input-type-button;
+	
+	background-color: $c-bc-pop-up-age-AND-error__input-type-button;
+	
+	cursor: pointer;
+}
+
+.pop-up-age__input-type-button-yes { margin-right: 50px; }
